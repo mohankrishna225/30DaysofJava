@@ -18,8 +18,8 @@ class Employee
 	{
 		eid =1;
 		salary =5000;
-		ceo = "Rishi";
-		System.out.println("In default COnstructor");
+		//ceo = "Rishi";
+		System.out.println("In default Constructor");
 
 	}
 
@@ -28,6 +28,14 @@ class Employee
 		ceo = "Pavani";
 		System.out.println("In static 2");
 	}
+
+	/*
+	static
+	{
+		ceo = "Sanju";
+		System.out.println("In static 2");
+	}
+	*/
 
 	public void show()
 	{
@@ -43,9 +51,11 @@ class Employee
 
 
 public class StaticDemo
-{
-	//
+{	
+	//int i=0; cannot be accessed inside the main() method since it is static 
+	static int i=0; //So specifying this int as static to be able to access it;
 	public static void main(String[] args) {
+		i=9;
 		/*
 		Employee mohan = new Employee();
 
