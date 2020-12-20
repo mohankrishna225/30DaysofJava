@@ -14,5 +14,26 @@ public class SelectionDemo
 		{
 			System.out.println("Odd");
 		}
+
+
+
+		int i=3;
+		int j;
+		if(i<5)
+		{
+			j=6;
+		}
+		else
+		{
+			j=7;
+		}
+
+		System.out.println(j);
+
+
+		j = i<5?1:2; //Ternary Operator
+		System.out.println(j);
+
+
 	}
 }
