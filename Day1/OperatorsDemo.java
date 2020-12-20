@@ -36,13 +36,7 @@ public class OperatorsDemo
 		System.out.println(m); //13
 		System.out.println(n); //13
 
-		
 
+}
 
-
-
-
-
-
-	}
 }
