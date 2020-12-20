@@ -27,6 +27,8 @@ class Outer
 
 }
 
+//Classes are stored as Outer$Inner.class,Outer$Inner1.class
+
 public class InnerDemo
 {
 	public static void main(String[] args) {
