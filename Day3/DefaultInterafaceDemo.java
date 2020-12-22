@@ -10,7 +10,7 @@ interface Demo
 	default void show() //To remove this error use default interfaces Using this we can declare and define as well;
 	{
 		System.out.println("In Show");
-	}
+	}//This default interface method can also be overrided;
 
 
 }
@@ -20,6 +20,11 @@ class DemoImp implements Demo
 	public void abc()
 	{
 		System.out.println("in abc");
+	}
+
+	public void show()
+	{
+		System.out.println("I'm new");
 	}
 }
 
