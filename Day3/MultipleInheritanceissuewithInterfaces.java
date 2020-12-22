@@ -25,19 +25,19 @@ class DemoImp implements Demo , MyDemo
 	{
 		System.out.println("in abc");
 	}
-	
 	@Override
 	public void show()
 	{
 		MyDemo.super.show();
 	}
 	
+	
 }
 public class MultipleInheritanceissuewithInterfaces
 {
 	public static void main(String[] args)
 	{
-		DemoImp obj = new DemoImp();
+		Demo obj = new DemoImp();
 		obj.abc();
 		obj.show();
 	}
