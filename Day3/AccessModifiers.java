@@ -1,0 +1,1 @@
+ //we cannot make a class private and protected 
