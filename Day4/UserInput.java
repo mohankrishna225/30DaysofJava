@@ -85,6 +85,7 @@ public class UserInput
     int n=0;
     System.out.println("Enter a Number");
 //From java 1.8 You don't need to close a resource automatically closes the resource;;
+    //Try with resource
     try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in)))
     {
     	n = Integer.parseInt(br.readLine());
