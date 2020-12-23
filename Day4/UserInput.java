@@ -31,6 +31,8 @@ public class UserInput
 
 */
 
+
+/*
 		String str;
 		int i;
 
@@ -44,6 +46,8 @@ public class UserInput
 
 		System.out.println("Hello" + i);
 
+*/
+
 
 
 /*		
@@ -56,6 +60,39 @@ public class UserInput
 		System.out.println(n);
 
 */
+/*
+
+		int n=0;
+
+		System.out.println("Enter a Number");
+		BufferedReader br=null; //BufferedReader is a resource and you should close the resource;
+
+		try
+		{
+			br = new BufferedReader(new InputStreamReader(System.in));
+			n = Integer.parseInt(br.readLine());
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		finally
+		{
+			br.close();
+		}
+*/
+
+    int n=0;
+    System.out.println("Enter a Number");
+//From java 1.8 You don't need to close a resource automatically closes the resource;;
+    try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in)))
+    {
+    	n = Integer.parseInt(br.readLine());
+    }
+
+    System.out.println(n);
+
+
 
 	}
 }
